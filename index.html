@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta  />
+    <meta/>
     <title>Exchange Rate Calculator</title>
     <link
       href= rel=
@@ -22,27 +22,62 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <div id="main">
       <button id="form-toggle">Toggle To Calculator</button>
-
-      <div id="exchange-display">
-        <img class="country-image" alt="Country Name Goes Here" src=""/>
+      <div id="exchange-display"></div>
+        <img class="country-image" alt="Country Flag Goes Here" src=""/>
         <h2 class="name">Insert Country Name Here</h2>
-        <button type="click">Display Country</button>
+        <div id="exchange-money-display">
+          <h3>Exchange rate: </h3>
+          <ul id="money-display-ul">
+            <li>
+              <h4>Euros: 1</h4>
+            </li>
+            <li>
+              <h4>---------------></h4>
+            </li>
+            <li>
+              <h4 id="country-name">Country name: </h4>
+            </li>
+            <li>
+              <h4 id="amount">Amount</h4>
+            </li>
+          </ul>
+          <h4 id="amount">Amount</h4>
+        </div>
+        <!-- <button type="click">Display Country</button> -->
       </div>
 
-      <!-- <form id="country-form">
+      <!-- <div id="country-form">
           <label for="description">Edited Description:</label>
           <textarea id="description"></textarea>
-          <button type="submit">Update Cake</button>
-        </form> -->
-
-        <form id="calculator-form" class="hidden">
-          <label for="review">Your Review:</label>
-          <textarea id="review"></textarea>
-          <input type="submit" value="Convert Currency"/>
-          <!-- <button type="submit">Convert Currency</button> -->
-        </form>
-      </div>
+          <button type="submit">Update Cake</button> 
+          </div> -->
+        <div id="calculator-form-section">
+          <h3>Exchange rate: </h3>
+          <form id="calculator-form" class="hidden">
+            <label for="review">How many euros:</label>
+            <textarea id="amountOfEuros"></textarea>
+            <input type="submit" value="Convert Currency"/>
+            <!-- <button type="submit">Convert Currency</button> -->
+          </form>
+        </div>
+        <div id="calculator-money-display"></div>
+          <ul id="calculator-display-ul">
+            <li>
+              <h4>Euros: 1</h4>
+            </li>
+            <li>
+              <h4>---------------></h4>
+            </li>
+            <li>
+              <h4 id="country-name">Country name: </h4>
+            </li>
+            <li>
+              <h4 id="amount">Amount</h4>
+            </li>
+          </ul>
+        </div>
+    </div>
   </body>
 </html>
