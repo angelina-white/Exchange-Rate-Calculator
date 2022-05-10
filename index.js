@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) =>
     .then((response) => response.json())
     .then((country) => 
     {
+        countryList(country)
         toggle(country)
         displayCountryRate(country)
         calculateRate(country)
@@ -14,11 +15,15 @@ document.addEventListener('DOMContentLoaded', (event) =>
 
 //displays list of country names
 function countryList(country) {
-    const newImage = document.createElement('img')
-    newImage.src = country.image
-    
-    newImage.addEventListener('click', () => displayCountyRate(country))
-    countryList.append(newImage)
+    const countryList = document.querySelector('#country-list')
+    countryList.textContent = ''
+    country.forEach(country => {
+        const li = document.createElement('li')
+        li.textContent = country
+        
+    countryList.addEventListener('click', () => displayCountryRate(country))
+    countryList.append(li)
+})
 }
 
 //toggles between exchange rate and calculator
