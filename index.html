@@ -3,28 +3,28 @@
   <head>
     <meta/>
     <title>Exchange Rate Calculator</title>
-    <link
-      href= rel=
-    />
     <link rel="stylesheet" type="text/css" href="main.css" />
     <script defer type="text/javascript" src="index.js"></script>
   </head>
-
   
   <body>
     <header>
-      <h1>Exchange Rates</h1>
+      <h1>Exchange Rates</h1> <!--header-->
       <nav>
-        <ul id="country-list">
+        <ul id="country-list"> <!--list names of countries-->
           <li>Country 1</li>
           <li>Country 2</li>
           <li>Country 3, etc</li>
         </ul>
       </nav>
     </header>
+
     <div id="main">
-      <button id="form-toggle">Toggle To Calculator</button>
-      <div id="exchange-display">
+
+      <button id="form-toggle">Toggle To Calculator</button> <!--toggle button-->
+
+      <!--displays 1 euro to exchanged rate for country-->
+      <div class="exchange-display">
         <img class="country-image" alt="Country Flag Goes Here" src=""/>
         <h2 class="name">Insert Country Name Here</h2>
         <div id="exchange-money-display">
@@ -44,24 +44,20 @@
             </li>
           </ul>
         </div>
-        <!-- <button type="click">Display Country</button> -->
       </div>
 
-      <!-- <div id="country-form">
-          <label for="description">Edited Description:</label>
-          <textarea id="description"></textarea>
-          <button type="submit">Update Cake</button> 
-          </div> -->
+      <!--displays inputted amount of euros to exchanged rate for country-->
+      <div class="calculator-display"> 
+        <h2 class="name">Insert Country Name Here</h2>
         <div id="calculator-form-section">
           <h3>Exchange rate: </h3>
           <form id="calculator-form">
             <label for="review">How many euros:</label>
             <textarea id="amountOfEuros"></textarea>
             <input type="submit" value="Convert Currency"/>
-            <!-- <button type="submit">Convert Currency</button> -->
           </form>
         </div>
-        <div id="calculator-money-display"></div>
+        <div id="calculator-money-display">
           <ul id="calculator-display-ul">
             <li>
               <h4>Euros: 1</h4>
@@ -77,6 +73,8 @@
             </li>
           </ul>
         </div>
+      </div>
+
     </div>
   </body>
 </html>
