@@ -64,6 +64,10 @@ function calculateRate(name, country)
     const nameTitle = document.getElementById("nameHeader2")
     nameTitle.innerHTML = name.toUpperCase()
 
+    //country code variable
+    const countryName = document.getElementById("country-name2")
+    countryName.innerText = "Country Code: " + name.toUpperCase()
+
     const form = document.getElementById("calculator-form")
     form.addEventListener("submit", (event) =>
     {
@@ -73,10 +77,6 @@ function calculateRate(name, country)
         const input = document.getElementById("amountOfEuros")
         const euros = document.getElementById("eurosAmount")
         euros.innerText = "Euros Amount: " + input.value
-
-        //country code variable
-        const countryName = document.getElementById("country-name2")
-        countryName.innerText = "Country Code: " + name.toUpperCase()
 
         //variable for exchange rate
         const rate = country[name]
