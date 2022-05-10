@@ -56,8 +56,3 @@ function calculateRate(country)
         //set text for amount display to result
     })
 }
-
-function findKeyValue()
-{
-    
-}
