@@ -10,14 +10,13 @@ document.addEventListener('DOMContentLoaded', (event) =>
     
 })
 
-
-
-
-
-
-
-
-
+function countryList(country) {
+    const newImage = document.createElement('img')
+    newImage.src = country.image
+    
+    newImage.addEventListener('click', () => displayCountyRate(country))
+    countryList.append(newImage)
+}
 
 function displayCountryRate(country)
 {
