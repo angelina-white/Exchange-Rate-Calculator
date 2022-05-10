@@ -40,8 +40,6 @@ function displayCountryRate(name, country)
 {
     const nameTitle = document.getElementById("nameHeader")
     nameTitle.innerHTML = name.toUpperCase()
-    const newName = document.getElementById("country-name")
-    newName.innerText = "Country Code: " + name.toUpperCase()
     const amount = document.getElementById("amountDisplayed")
     amount.innerText = country[name]  
 }
@@ -52,10 +50,6 @@ function calculateRate(name, country)
 {
     const nameTitle = document.getElementById("nameHeader2")
     nameTitle.innerHTML = name.toUpperCase()
-
-    //country code variable
-    const countryName = document.getElementById("country-name2")
-    countryName.innerText = "Country Code: " + name.toUpperCase()
 
     const form = document.getElementById("calculator-form")
     form.addEventListener("submit", (event) =>
