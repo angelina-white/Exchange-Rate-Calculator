@@ -24,7 +24,12 @@ function countryList(country) {
         countryList.append(li)
     })
 }
+document.querySelector('#form-toggle').addEventListener('click', (e) => {
+    document.querySelector('#main').classList.toggle('hidden')
+    document.querySelector('#calculator-form').classList.toggle('hidden')
+    e.target.textContent === 'Toggle to Calculator Form'? e.target.textContent = 'Toggle to Main':e.target.textContent = 'Toggle to Calculator Form'
 
+})
 //toggles between exchange rate and calculator
 function toggle(country)
 {
