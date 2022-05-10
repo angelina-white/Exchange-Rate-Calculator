@@ -18,20 +18,12 @@
 
     <div id="main">
 
-      <!-- <nav> 
-        <ul id="country-list">
-          <li>Country 1</li>
-          <li>Country 2</li>
-          <li>Country 3, etc</li>
-        </ul>
-      </nav> -->
-
       <button id="form-toggle">Toggle To Calculator</button> <!--toggle button-->
 
       <!--displays 1 euro to exchanged rate for country-->
       <div id="exchange-display">
         <img class="country-image" alt="Country Flag Goes Here" src=""/>
-        <h2 id="nameHeader">Insert Country Name Here</h2>
+        <h2 id="nameHeader">Country Code</h2>
         <div id="exchange-money-display">
           <h3>Exchange rate: </h3>
           <ul id="money-display-ul">
@@ -53,35 +45,34 @@
       <!--displays inputted amount of euros to exchanged rate for country-->
 
       <div id="calculator-display"> 
-        <h2 id="name">Insert Country Name Here</h2>
 
-      <div class="calculator-display"> 
-        <h2 id="nameHeader2">Insert Country Name Here</h2>
-        <div id="calculator-form-section">
-          <h3>Exchange rate: </h3>
-          <form id="calculator-form">
-            <label for="review">How many euros:</label>
-            <textarea id="amountOfEuros"></textarea>
-            <input type="submit" value="Convert Currency"/>
-          </form>
+        <div class="calculator-display"> 
+          <h2 id="nameHeader2">Country Code</h2>
+          <div id="calculator-form-section">
+            <h3>Exchange rate: </h3>
+            <form id="calculator-form">
+              <label for="review">How many euros:</label>
+              <textarea id="amountOfEuros"></textarea>
+              <input type="submit" value="Convert Currency"/>
+            </form>
+          </div>
+          <div id="calculator-money-display">
+            <ul id="calculator-display-ul">
+              <li>
+                <h4 id="eurosAmount">Euros Amount: </h4>
+              </li>
+              </li>
+                <h2>&#x2192</h2>
+              </li>
+              <li>
+                <h4 id="country-name2">Country Code: </h4>
+              </li>
+              <li>
+                <h4 id="amountDisplayed2">Amount:</h4>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="calculator-money-display">
-          <ul id="calculator-display-ul">
-            <li>
-              <h4 id="eurosAmount">Euros Amount: </h4>
-            </li>
-            </li>
-              <h2>&#x2192</h2>
-            </li>
-            <li>
-              <h4 id="country-name2">Country Code: </h4>
-            </li>
-            <li>
-              <h4 id="amountDisplayed2">Amount:</h4>
-            </li>
-          </ul>
-        </div>
-      </div>
 
     </div>
   </body>
