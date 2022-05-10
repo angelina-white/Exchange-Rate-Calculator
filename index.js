@@ -11,11 +11,14 @@ document.addEventListener('DOMContentLoaded', (event) =>
 })
 
 function countryList(country) {
-    const newImage = document.createElement('img')
-    newImage.src = country.image
-    
-    newImage.addEventListener('click', () => displayCountyRate(country))
-    countryList.append(newImage)
+    const countryList = document.querySelector('#country-list')
+    reviewList.textContent = ''
+    country.forEach(country => {
+        const li = document.createElement('li')
+        li.textContent = country
+        countryList.append(li)
+    })
+    countryList.addEventListener('click', () => displayCountryRate(country))
 }
 
 function displayCountryRate(country)
