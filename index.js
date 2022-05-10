@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) =>
     {
         displayCountryRate(country)
         calculateRate(country)
+        countryList(country)
     })
     
 })
