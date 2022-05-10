@@ -1,5 +1,11 @@
 /*scroll ability
 overflow: scroll;*/
+body {
+    font-family: 'Avantgarde';
+    font-size: 15px;
+    background-color: white;
+    opacity: 1;
+  }
 
 #country-list{
     overflow: scroll;
@@ -7,9 +13,74 @@ overflow: scroll;*/
     display: flex;
     flex-direction: column;
     max-width: 100px;
+ 
 }
 
 .hidden{
     display:none;
     
 }
+
+
+#country-list li {
+    font-size: 2vh;
+    margin-top: 1vh;
+    padding-top: 1vh;
+    background-color: rgba(45, 218, 227, 0.892);
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    height: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+
+
+input[type="submit"] {
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+header {
+    float: left;
+    width: 225px;
+    height: auto;
+    border-radius: 0 0 6px 0;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  h2 { 
+    font-family: "Great Vibes" ;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: rgb(40, 179, 249);
+    margin-right: 40px;
+    margin-top: 10px;
+    font-family: "Avantgarde";
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: rgb(40, 179, 249);
+    margin: 10px 0;
+    font-family: "Great Vibes";
+    
+  }
+
+  h4 {
+    color: tan;
+    font-weight: bold;
+  }
+
+  li {
+    list-style-type: none;
+  }

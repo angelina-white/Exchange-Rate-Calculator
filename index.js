@@ -1,4 +1,4 @@
-//does every function after loaded
+// //does every function after loaded
 document.addEventListener('DOMContentLoaded', (event) => 
 {
     fetch("https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json")
@@ -24,13 +24,23 @@ function countryList(country) {
         countryList.append(li)
     })
 }
+
+// function exchangeDisplay(country) {
+//     const exchangeDisplay = document.querySelector("exchange-display")
+//     exchangeDisplay.textContent = 
+
+// }
+
+//toggles between exchange rate and calculator
+
 document.querySelector('#form-toggle').addEventListener('click', (e) => {
-    document.querySelector('#main').classList.toggle('hidden')
+    document.querySelector('#exchange-display').classList.toggle('hidden')
     document.querySelector('#calculator-form').classList.toggle('hidden')
-    e.target.textContent === 'Toggle to Calculator Form'? e.target.textContent = 'Toggle to main':e.target.textContent = 'Toggle to Calculator Form'
+    e.target.textContent === 'Toggle to Exchange'? e.target.textContent = 'Toggle to Calculator':e.target.textContent = 'Toggle to Exchange'
 
 })
-//toggles between exchange rate and calculator
+
+
 function toggle(country)
 {
     // console.log(country)
@@ -44,6 +54,7 @@ function displayCountryRate(name, country)
     const amount = document.getElementById("amountDisplayed")
     amount.innerText = country[name]  
 }
+
 
 //displays country name, euros input form, amount of euros inputted to exchanged rate for country chosen
 function calculateRate(name, country)
@@ -73,3 +84,4 @@ function calculateRate(name, country)
         amount.innerText = result
     })
 }
+
