@@ -20,6 +20,7 @@ function countryList(country) {
         const li = document.createElement('li')
         li.textContent = name.toUpperCase()
         li.addEventListener('click', () => displayCountryRate(name, country))
+        li.addEventListener('click', () => calculateRate(name, country))
         countryList.append(li)
     })
 }
@@ -42,7 +43,7 @@ function displayCountryRate(name, country)
 //displays country name, euros input form, amount of euros inputted to exchanged rate for country chosen
 function calculateRate(country)
 {
-    // console.log(country)
+    console.log("from calculate function" + country)
     const form = document.getElementById("calculator-form")
     form.addEventListener("submit", (event) =>
     {
