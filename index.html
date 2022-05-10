@@ -10,23 +10,24 @@
   <body>
     <header>
       <h1>Exchange Rates</h1> <!--header-->
-      <nav>
-        <ul id="country-list"> <!--list names of countries-->
+    </header>
+
+    <div id="main">
+
+      <nav> <!--list names of countries-->
+        <ul id="country-list">
           <li>Country 1</li>
           <li>Country 2</li>
           <li>Country 3, etc</li>
         </ul>
       </nav>
-    </header>
-
-    <div id="main">
 
       <button id="form-toggle">Toggle To Calculator</button> <!--toggle button-->
 
       <!--displays 1 euro to exchanged rate for country-->
       <div id="exchange-display">
         <img class="country-image" alt="Country Flag Goes Here" src=""/>
-        <h2 class="name">Insert Country Name Here</h2>
+        <h2 id="nameHeader">Insert Country Name Here</h2>
         <div id="exchange-money-display">
           <h3>Exchange rate: </h3>
           <ul id="money-display-ul">
@@ -48,7 +49,7 @@
 
       <!--displays inputted amount of euros to exchanged rate for country-->
       <div class="calculator-display"> 
-        <h2 class="name">Insert Country Name Here</h2>
+        <h2 id="nameHeader2">Insert Country Name Here</h2>
         <div id="calculator-form-section">
           <h3>Exchange rate: </h3>
           <form id="calculator-form">
