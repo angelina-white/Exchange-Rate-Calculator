@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', (event) =>
         countryList(country)
         displayCountryRate(country)
         calculateRate(country)
-
     })
     
 })
@@ -18,9 +17,10 @@ function countryList(country) {
     country.forEach(country => {
         const li = document.createElement('li')
         li.textContent = country
-        countryList.append(li)
-    })
+        
     countryList.addEventListener('click', () => displayCountryRate(country))
+    countryList.append(li)
+})
 }
 
 function displayCountryRate(country)
