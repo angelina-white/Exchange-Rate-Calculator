@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', (event) =>
 {
     fetch("https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json")
     .then((response) => response.json())
-    .then((countryExchange) => 
+    .then((country) => 
     {
-        displayCountryRate(countryExchange)
-        calculateRate(countryExchange)
+        displayCountryRate(country)
+        calculateRate(country)
     })
     
 })
@@ -26,6 +26,9 @@ function displayCountryRate(country)
     const amount = document.getElementById("amount")
     console.log(amount)
     console.log(country)
+    //variable for exchange rate
+    //set amount text for exchange rate
+    
 }
 
 function calculateRate(country)
@@ -36,5 +39,11 @@ function calculateRate(country)
     {
         event.preventDefault()
         console.log("clicky")
+        //variable for amount inputted
+        //variable for exchange rate
+        //take amount inputted and multiply by exchange rate
+        //variable for result
+        //variable for amount display
+        //set text for amount display to result
     })
 }
