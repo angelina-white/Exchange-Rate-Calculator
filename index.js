@@ -25,9 +25,9 @@ function countryList(country) {
     })
 }
 document.querySelector('#form-toggle').addEventListener('click', (e) => {
-    document.querySelector('#display-exchange').classList.toggle('hidden')
+    document.querySelector('#main').classList.toggle('hidden')
     document.querySelector('#calculator-form').classList.toggle('hidden')
-    e.target.textContent === 'Toggle to Calculator Form'? e.target.textContent = 'Toggle to Exchange Display':e.target.textContent = 'Toggle to Calculator Form'
+    e.target.textContent === 'Toggle to Calculator Form'? e.target.textContent = 'Toggle to main':e.target.textContent = 'Toggle to Calculator Form'
 
 })
 //toggles between exchange rate and calculator
