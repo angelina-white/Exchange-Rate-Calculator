@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', (event) =>
     .then((response) => response.json())
     .then((country) => 
     {
+        countryList(country)
         displayCountryRate(country)
         calculateRate(country)
-        countryList(country)
+
     })
     
 })
