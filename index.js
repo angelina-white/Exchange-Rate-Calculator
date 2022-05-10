@@ -39,6 +39,8 @@ function toggle(country)
 //displays country name, 1 euro to exchange rate
 function displayCountryRate(name, country)
 {
+    const nameTitle = document.getElementById("nameHeader")
+    nameTitle.innerHTML = name.toUpperCase()
     const newName = document.getElementById("country-name")
     newName.innerText = "Country Code: " + name.toUpperCase()
     const amount = document.getElementById("amountDisplayed")
@@ -48,6 +50,9 @@ function displayCountryRate(name, country)
 //displays country name, euros input form, amount of euros inputted to exchanged rate for country chosen
 function calculateRate(name, country)
 {
+    const nameTitle = document.getElementById("nameHeader2")
+    nameTitle.innerHTML = name.toUpperCase()
+
     const form = document.getElementById("calculator-form")
     form.addEventListener("submit", (event) =>
     {
