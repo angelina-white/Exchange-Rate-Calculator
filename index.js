@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) =>
 
 function countryList(country) {
     const countryList = document.querySelector('#country-list')
-    reviewList.textContent = ''
+    countryList.textContent = ''
     country.forEach(country => {
         const li = document.createElement('li')
         li.textContent = country
