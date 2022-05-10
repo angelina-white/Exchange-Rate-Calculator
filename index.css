@@ -1,6 +1,13 @@
 /*scroll ability
 overflow: scroll;*/
 
+#country-list{
+    overflow: scroll;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+}
 
 .hidden{
     display:none;
