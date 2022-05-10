@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) =>
     .then((country) => 
     {
         countryList(country.eur)
-        toggle(country)
+        toggle()
     })
     
 })
@@ -25,25 +25,14 @@ function countryList(country) {
     })
 }
 
-// function exchangeDisplay(country) {
-//     const exchangeDisplay = document.querySelector("exchange-display")
-//     exchangeDisplay.textContent = 
-
-// }
-
 //toggles between exchange rate and calculator
-
-document.querySelector('#form-toggle').addEventListener('click', (e) => {
-    document.querySelector('#exchange-display').classList.toggle('hidden')
-    document.querySelector('#calculator-form').classList.toggle('hidden')
-    e.target.textContent === 'Toggle to Exchange'? e.target.textContent = 'Toggle to Calculator':e.target.textContent = 'Toggle to Exchange'
-
-})
-
-
-function toggle(country)
+function toggle()
 {
-    // console.log(country)
+    document.querySelector('#form-toggle').addEventListener('click', (e) => {
+        document.querySelector('#exchange-display').classList.toggle('hidden')
+        document.querySelector('#calculator-display').classList.toggle('hidden')
+        e.target.textContent === 'Toggle to Exchange'? e.target.textContent = 'Toggle to Calculator':e.target.textContent = 'Toggle to Exchange'
+    })
 }
 
 //displays country name, 1 euro to exchange rate
