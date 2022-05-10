@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', (event) =>
     {
         countryList(country.eur)
         toggle(country)
-        displayCountryRate(country)
-        calculateRate(country)
     })
     
 })
@@ -17,13 +15,12 @@ document.addEventListener('DOMContentLoaded', (event) =>
 function countryList(country) {
     const countryList = document.querySelector('#country-list')
     countryList.textContent = ''
-    const countryNames = [...Object.keys(country)]
-    countryNames.forEach((country) => 
+    Object.keys(country).forEach((name) => 
     {
         const li = document.createElement('li')
-        li.textContent = country
+        li.textContent = name.toUpperCase()
+        li.addEventListener('click', () => displayCountryRate(name, country))
         countryList.append(li)
-        //countryList.addEventListener('click', () => displayCountryRate(country))
     })
 }
 
@@ -34,14 +31,12 @@ function toggle(country)
 }
 
 //displays country name, 1 euro to exchange rate
-function displayCountryRate(country)
+function displayCountryRate(name, country)
 {
-    const amount = document.getElementById("amount")
-    // console.log(amount)
-    // console.log(country)
-    //variable for exchange rate
-    //set amount text for exchange rate
-    
+    const newName = document.getElementById("country-name")
+    newName.innerText = "Country Code: " + name.toUpperCase()
+    const amount = document.getElementById("amountDisplayed")
+    amount.innerText = country[name]  
 }
 
 //displays country name, euros input form, amount of euros inputted to exchanged rate for country chosen
@@ -60,4 +55,9 @@ function calculateRate(country)
         //variable for amount display
         //set text for amount display to result
     })
+}
+
+function findKeyValue()
+{
+    
 }
