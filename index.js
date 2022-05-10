@@ -35,15 +35,8 @@ function displayCountryRate(name, country)
 {
     const newName = document.getElementById("country-name")
     newName.innerText = "Country Code: " + name.toUpperCase()
-    console.log(country)
-
-    //variable for exchange rate
-    
-
-
-    //set amount text for exchange rate
-    //const amount = document.getElementById("amount")
-    
+    const amount = document.getElementById("amountDisplayed")
+    amount.innerText = country[name]  
 }
 
 //displays country name, euros input form, amount of euros inputted to exchanged rate for country chosen
