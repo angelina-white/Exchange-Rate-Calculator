@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) =>
     .then((country) => 
     {
         countryList(country.eur)
-        toggle(country)
+        toggle()
     })
     
 })
@@ -24,16 +24,15 @@ function countryList(country) {
         countryList.append(li)
     })
 }
-document.querySelector('#form-toggle').addEventListener('click', (e) => {
-    document.querySelector('#main').classList.toggle('hidden')
-    document.querySelector('#calculator-form').classList.toggle('hidden')
-    e.target.textContent === 'Toggle to Calculator Form'? e.target.textContent = 'Toggle to Main':e.target.textContent = 'Toggle to Calculator Form'
 
-})
 //toggles between exchange rate and calculator
-function toggle(country)
+function toggle()
 {
-    // console.log(country)
+    document.querySelector('#form-toggle').addEventListener('click', (e) => {
+        document.querySelector('#main').classList.toggle('hidden')
+        document.querySelector('#calculator-form').classList.toggle('hidden')
+        e.target.textContent === 'Toggle to Calculator Form'? e.target.textContent = 'Toggle to Main':e.target.textContent = 'Toggle to Calculator Form'
+    })
 }
 
 //displays country name, 1 euro to exchange rate
@@ -42,7 +41,7 @@ function displayCountryRate(name, country)
     const nameTitle = document.getElementById("nameHeader")
     nameTitle.innerHTML = name.toUpperCase()
     const newName = document.getElementById("country-name")
-    newName.innerText = "Country Code: " + name.toUpperCase()
+    newName.innerText = name.toUpperCase()
     const amount = document.getElementById("amountDisplayed")
     amount.innerText = country[name]  
 }
