@@ -25,16 +25,6 @@ function countryList(country) {
     })
 }
 
-//toggles between exchange rate and calculator
-function toggle()
-{
-    document.querySelector('#form-toggle').addEventListener('click', (e) => {
-        document.querySelector('#main').classList.toggle('hidden')
-        document.querySelector('#calculator-form').classList.toggle('hidden')
-        e.target.textContent === 'Toggle to Calculator Form'? e.target.textContent = 'Toggle to Main':e.target.textContent = 'Toggle to Calculator Form'
-    })
-}
-
 //displays country name, 1 euro to exchange rate
 function displayCountryRate(name, country)
 {
