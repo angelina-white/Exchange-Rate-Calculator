@@ -4,3 +4,11 @@ document.addEventListener('DOMContentLoaded', (event) =>
     .then((response) => response.json())
     .then((element) => console.log(element.eur))
 })
+
+function countryList(country) {
+    const newImage = document.createElement('img')
+    newImage.src = country.image
+    
+    newImage.addEventListener('click', () => displayCountyRate(country))
+    countryList.append(newImage)
+}
