@@ -46,19 +46,30 @@ function displayCountryRate(name, country)
 }
 
 //displays country name, euros input form, amount of euros inputted to exchanged rate for country chosen
-function calculateRate(country)
+function calculateRate(name, country)
 {
-    console.log("from calculate function" + country)
     const form = document.getElementById("calculator-form")
     form.addEventListener("submit", (event) =>
     {
         event.preventDefault()
-        // console.log("clicky")
+
         //variable for amount inputted
+        const input = document.getElementById("amountOfEuros")
+        const euros = document.getElementById("eurosAmount")
+        euros.innerText = "Euros Amount: " + input.value
+
+        //country code variable
+        const countryName = document.getElementById("country-name2")
+        countryName.innerText = "Country Code: " + name.toUpperCase()
+
         //variable for exchange rate
+        const rate = country[name]
+
         //take amount inputted and multiply by exchange rate
-        //variable for result
+        const result = input.value * rate
+
         //variable for amount display
-        //set text for amount display to result
+        const amount = document.getElementById("amountDisplayed2")
+        amount.innerText = result
     })
 }
