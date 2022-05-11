@@ -4,6 +4,7 @@
     <meta/>
     <title>Exchange Rate Calculator</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer type="text/javascript" src="index.js"></script>
   </head>
   
@@ -12,8 +13,13 @@
 
       <h1>Country Currencies</h1> <!--header-->
       <nav>
+        <div class="search-container">
+          <form id="search-form">
+            <input id="searchbar" type="text" placeholder="Search..">
+            <button type="submit"><i class="fa fa-search" id="searchButton"></i></button>
+          </form>
+        </div>
         <ul id="country-list"> <!--list names of countries-->
-      <h1>Exchange Rates</h1> <!--header-->
     </header>
 
     <div id="main">
@@ -22,7 +28,6 @@
 
       <!--displays 1 euro to exchanged rate for country-->
       <div id="exchange-display">
-        <img class="country-image" alt="Country Flag Goes Here" src=""/>
         <h2 id="nameHeader">Country Code</h2>
         <div id="exchange-money-display">
           <h3>Exchange rate: </h3>
