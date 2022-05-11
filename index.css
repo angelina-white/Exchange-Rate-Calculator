@@ -10,7 +10,7 @@ body {
 
 #country-list{
     overflow: scroll;
-    height: 750px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     max-width: 225px;
@@ -33,6 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-left: 18px;
 }
 
 input[type="submit"] {
@@ -46,11 +47,12 @@ input[type="submit"] {
 header {
     float: left;
     width: 225px;
-    height: auto;
-    border-radius: 0 0 6px 0;
-    padding: 10px;
+    height: 800px;
+    /* border-radius: 0 0 0 0; */
+    /* padding: 10px; */
     margin-right: 10px;
-    margin-left: 18px;
+
+    background-color: azure;
   }
 
 h2 { 
@@ -88,12 +90,13 @@ li {
 input[type=text] {
   padding: 6px;
   margin-top: 8px;
-  font-size: 13px;
-  border: 3;
+  font-size: 20px;
+  height: 15px;
+  margin-left: 18px;
+  width: 63%
 }
 
 .search-container button {
-  float: right;
   padding: 6px 10px;
   margin-top: 8px;
   background: #ddd;
