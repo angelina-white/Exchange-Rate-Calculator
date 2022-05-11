@@ -26,6 +26,7 @@ function countryList(country) {
     })
 }
 
+//search bar for country codes
 function search(country)
 {
     const search = document.getElementById("search-form")
