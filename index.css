@@ -1,5 +1,6 @@
 /*scroll ability
 overflow: scroll;*/
+
 body {
     font-family: 'Avantgarde';
     font-size: 15px;
@@ -34,8 +35,6 @@ body {
     cursor: pointer;
   }
 
-
-
 input[type="submit"] {
   color: white;
   border: 1px solid white;
@@ -53,45 +52,66 @@ header {
     margin-right: 10px;
   }
 
-  h2 { 
-    font-family: "Great Vibes" ;
-  }
+h2 { 
+  font-family: "Great Vibes" ;
+}
 
-  h1 {
-    font-size: 30px;
-    color: rgb(40, 179, 249);
-    margin-right: 40px;
-    margin-top: 10px;
-    font-family: "Avantgarde";
-    text-align: center;
-  }
+h1 {
+  font-size: 30px;
+  color: rgb(40, 179, 249);
+  margin-right: 40px;
+  margin-top: 10px;
+  font-family: "Avantgarde";
+  text-align: center;
+}
 
-  h3 {
-    font-size: 20px;
-    color: rgb(40, 179, 249);
-    margin: 10px 0;
-    font-family: "Great Vibes";
-    
-  }
+h3 {
+  font-size: 20px;
+  color: rgb(40, 179, 249);
+  margin: 10px 0;
+  font-family: "Great Vibes";
 
-  h4 {
-    color: tan;
-    font-weight: bold;
-  }
+}
 
-  li {
-    list-style-type: none;
-  }
+h4 {
+  color: tan;
+  font-weight: bold;
+}
 
-  #main {
-    font-size: 4vh;
-    margin-top: 1vh;
-    padding-top: 10vh;
-    height: 10vh;
-    justify-content: center;
-    align-items: center;
-  }
+li {
+  list-style-type: none;
+}
 
+input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 13px;
+  border: 3;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  /* margin-right: 16px; */
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+#main {
+  font-size: 4vh;
+  margin-top: 1vh;
+  padding-top: 10vh;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
 
 #form-toggle {
   background-color: rgba(147, 218, 221, 0.892);

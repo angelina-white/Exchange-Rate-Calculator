@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) =>
     .then((country) => 
     {
         countryList(country.eur)
+        search(country.eur)
         toggle()
     })
     
@@ -22,6 +23,20 @@ function countryList(country) {
         li.addEventListener('click', () => displayCountryRate(name, country))
         li.addEventListener('click', () => calculateRate(name, country))
         countryList.append(li)
+    })
+}
+
+function search(country)
+{
+    const search = document.getElementById("search-form")
+    search.addEventListener("submit", (event) =>
+    {
+        event.preventDefault()
+        const searchedName = document.getElementById("searchbar")
+        const nameVal = searchedName.value
+        const name = nameVal.toLowerCase()
+        displayCountryRate(name, country)
+        calculateRate(name, country)
     })
 }
 
