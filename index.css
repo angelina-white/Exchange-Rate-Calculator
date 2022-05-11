@@ -3,7 +3,7 @@ overflow: scroll;*/
 body {
     font-family: 'Avantgarde';
     font-size: 15px;
-    background-color: white;
+    background-color:white;
     opacity: 1;
   }
 
@@ -81,4 +81,13 @@ header {
 
   li {
     list-style-type: none;
+  }
+
+  #main {
+    font-size: 4vh;
+    margin-top: 1vh;
+    padding-top: 10vh;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
   }
