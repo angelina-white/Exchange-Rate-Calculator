@@ -65,25 +65,21 @@ function calculateRate(name, country)
 {
     const nameTitle = document.getElementById("nameHeader2")
     nameTitle.innerHTML = name.toUpperCase()
+    const input = document.getElementById("amountOfEuros")
+
+    const euros = document.getElementById("eurosAmount")
+    const amount = document.getElementById("amountDisplayed2")
+
+    euros.innerHTML = "Euros"
+    amount.innerHTML = ""
 
     const form = document.getElementById("calculator-form")
     form.addEventListener("submit", (event) =>
     {
         event.preventDefault()
-
-        //variable for amount inputted
-        const input = document.getElementById("amountOfEuros")
-        const euros = document.getElementById("eurosAmount")
         euros.innerText = input.value + " Euros"
-
-        //variable for exchange rate
         const rate = country[name]
-
-        //take amount inputted and multiply by exchange rate
         const result = input.value * rate
-
-        //variable for amount display
-        const amount = document.getElementById("amountDisplayed2")
         amount.innerText = result
     })
 }
