@@ -33,7 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-  }
+}
 
 input[type="submit"] {
   color: white;
@@ -67,16 +67,18 @@ h1 {
 }
 
 h3 {
-  font-size: 20px;
   color: rgb(40, 179, 249);
   margin: 10px 0;
   font-family: "Great Vibes";
-
 }
 
-h4 {
+h5 {
   color: tan;
   font-weight: bold;
+}
+
+#nameHeader {
+  color: black;
 }
 
 li {
@@ -94,7 +96,6 @@ input[type=text] {
   float: right;
   padding: 6px 10px;
   margin-top: 8px;
-  /* margin-right: 16px; */
   background: #ddd;
   font-size: 17px;
   border: none;
@@ -123,4 +124,34 @@ input[type=text] {
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
+}
+
+#money-display-ul {
+  display: flex;
+}
+
+#money-display-ul li {
+  margin-right: 115px;
+
+  margin-left: -40px;
+}
+
+#calculator-display-ul {
+  display: flex;
+}
+
+#calculator-display-ul li {
+  margin-right: 115px;
+  margin-left: -40px;
+}
+
+#amountOfEuros {
+  height: 40px;
+  font-size: 30px;
+  width: 300px;
+}
+
+#convert-button {
+  font-size: 20px;
+  height: 40px;
 }
