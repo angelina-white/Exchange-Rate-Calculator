@@ -74,7 +74,7 @@ function calculateRate(name, country)
         //variable for amount inputted
         const input = document.getElementById("amountOfEuros")
         const euros = document.getElementById("eurosAmount")
-        euros.innerText = "Euros Amount: " + input.value
+        euros.innerText = input.value + " Euros"
 
         //variable for exchange rate
         const rate = country[name]
