@@ -77,9 +77,11 @@ function calculateRate(name, country)
     form.addEventListener("submit", (event) =>
     {
         event.preventDefault()
-        euros.innerText = input.value + " Euros"
+        const inputValue = input.value
+        const num = parseFloat(inputValue.replace(/,/g, ''));
+        euros.innerText = inputValue + " Euros"
         const rate = country[name]
-        const result = input.value * rate
+        const result = num * rate
         amount.innerText = result
     })
 }
