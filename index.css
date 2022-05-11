@@ -62,10 +62,16 @@ h2 {
 h1 {
   font-size: 65px;
   color: rgb(40, 179, 249);
-  margin-top: 25px;
+  margin-top: 0px;
+  padding-top: 25px;
   font-family: "Avantgarde";
-  margin-left: 25px;
-  margin-bottom: 25px;
+  padding-left: 25px;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+  background-color: white;
+  width: 150%;
+  
+  border-bottom: 10px solid;
 }
 
 h3 {
