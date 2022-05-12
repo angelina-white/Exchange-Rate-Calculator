@@ -161,3 +161,14 @@ input[type=text] {
   font-size: 20px;
   height: 40px;
 }
+
+#currencyImage {
+  width: 100%;
+  height: 200px;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

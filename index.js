@@ -1,4 +1,4 @@
-// //does every function after loaded
+//does every function after loaded
 document.addEventListener('DOMContentLoaded', (event) => 
 {
     fetch("https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json")
