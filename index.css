@@ -71,7 +71,7 @@ h1 {
 
 h3 {
   color: rgb(40, 179, 249);
-  margin: 10px 0;
+  margin: 20px 0;
   font-family: "Great Vibes";
 }
 
@@ -154,12 +154,15 @@ input[type=text] {
 #amountOfEuros {
   height: 40px;
   font-size: 30px;
-  width: 300px;
+  width: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #convert-button {
   font-size: 20px;
-  height: 40px;
+  height: 47px;
+  position: absolute;
 }
 
 #currencyImage {
